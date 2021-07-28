@@ -1,8 +1,8 @@
-from utils import *
+from helper.utils import *
 import cv2
 import numpy as np
-from face_landmarks import detect_marks
-from face_landmarks import draw_marks, line, linemain
+from helper.face_landmarks import detect_marks
+from helper.face_landmarks import draw_marks, line, linemain
 
 
 
@@ -40,5 +40,5 @@ def draw_all(img, cxl, cyl, cxr, cyr, points, points2, points3, points4):
         draw_marks(img, points3, color=(150,100,50))
         line(img, points3)
         linemain(img, points2)
-        cv2.circle(img, (cxl, cyl), 5, (0, 0, 255), -1)
-        cv2.circle(img, (cxr, cyr), 5, (0, 0, 255), -1)
+        cv2.circle(img, (cxl, cyl), 15, (0, 0, 255), 3)
+        cv2.circle(img, (cxr, cyr), 15, (0, 0, 255), 3)
