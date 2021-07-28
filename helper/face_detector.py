@@ -27,5 +27,5 @@ def find_faces(img, model):
 def draw_faces(img, faces):
  
     for x, y, x1, y1 in faces:
-        cv2.rectangle(img, (x, y), (x1, y1), (0, 0, 255), 3)
-        
+        img = cv2.rectangle(img, (x, y), (x1, y1), (0, 0, 255), 3)
+    return img  

@@ -96,5 +96,16 @@ def detect_marks(img, model, face):
 #define  a function to draw masks
 def draw_marks(image, marks, color=(0, 255, 0)):
     for mark in marks:
-        cv2.circle(image, (mark[0], mark[1]), 2, color, -1, cv2.LINE_AA)
+        img = cv2.circle(image, (mark[0], mark[1]), 2, color, -1, cv2.LINE_AA)
     
+    return img
+
+def line(img, marks):
+    cv2.drawContours(img, [marks], 0, (255,255,255), 1)
+
+    
+def linemain(img,marks):
+    for index, item in enumerate(marks): 
+        if index == len(marks) -1:
+            break
+        cv2.line(img, item, marks[index + 1], [255, 255, 255], 1) 
