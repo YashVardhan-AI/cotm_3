@@ -12,8 +12,9 @@ def eye_on_mask(mask, side, shape):
     
 def contouring(thresh, mid, img, right=False):
 
-    cnts, _ = cv2.findContours(thresh, cv2.RETR_EXTERNAL,cv2.CHAIN_APPROX_NONE)
+
     try:
+        cnts, _ = cv2.findContours(thresh, cv2.RETR_EXTERNAL,cv2.CHAIN_APPROX_NONE)
         cnt = max(cnts, key = cv2.contourArea)
         M = cv2.moments(cnt)
         cx = int(M['m10']/M['m00'])
