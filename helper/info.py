@@ -15,12 +15,13 @@ def welcome():
     st.markdown("  ")
     st.markdown("  ")
     st.markdown("  ")
-    st.markdown("""### App: try the app, you can choose your own images for both style and content, or try the pre-loaded ones.""")
-    st.markdown("""###
-    Threshold slider allows you to change the  threshhold value""")
-    st.markdown("""###
-    The show threshold checkbox allows you to see the thresholded image""")    
+    st.markdown("""### Face Detection : try the app, you can choose your own images for both style and content, or try the pre-loaded ones.""")
+    st.markdown("""- Threshold slider allows you to change the  threshhold value""")
+    st.markdown("""- The show threshold checkbox allows you to see the thresholded image""")    
     st.markdown("  ")
+    st.markdown("### edge detection : In this page you can detect all the edges in a image")
+    st.markdown("- You Can do it in real time or upload an Image")
+    st.markdown("- You Can also change the values of threshold 1 and 2 to get a better result")
     st.markdown("###        About: to read more about the neural network and the algorithm behind the hooks and see how it works is about.")
     imglist =[ 'Face_detection/img/obama.jpg',
     'Face_detection/processed/edited_obama.jpg']
