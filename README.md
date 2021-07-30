@@ -11,6 +11,7 @@ or
   git clone https://github.com/porus-creator/cotm_3/
 ```
 From terminal or you can download the zip file, then extract it.
+
 **Install the required libraries**
 ```bash
   cd cotm_3
