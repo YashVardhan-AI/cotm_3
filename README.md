@@ -1,4 +1,5 @@
-# cotm_3
+# cotm_4
+## This repo is archived the repo now is https://github.com/YashVardhan-AI/Fun-Effects
 the challange of the month from AI student community
 
 ### How to run
